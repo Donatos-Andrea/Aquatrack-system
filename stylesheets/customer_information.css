@@ -1,0 +1,117 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dbfbff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #004dd0;
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #0020ac;
+  }
+  
+  .logo-text h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .logo-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #052c81; 
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbf3fa; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #004dd0; 
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #004dd0; 
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form input[type="text"]:focus,
+  .form input[type="email"]:focus,
+  .form select:focus {
+    outline: none;
+    border-color: #0020ac; 
+  }
+  
+  .form label {
+    margin-top: 10px;
+    color: #004dd0;
+  }
+  
+  .form button {
+    background-color: #004dd0; /* Dark blue button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .form button:hover {
+    background-color: #0020ac; /* Darker blue on hover */
+  }
+  
