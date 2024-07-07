@@ -28,17 +28,15 @@
            efficient, and reliable water management system.</p>
     </div>
   <div class="login">
-    <form>
+    <form action="./php/log_in.php" method="post" id="login-form">
       <h1>Log In</h1>
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Password" required />
+      <input type="email" id="email" placeholder="Email" name="email"required />
+      <input type="password" id="password" placeholder="Password" name="password"required />
       <a class="signup-link" href="signup.html">Don't have a account?</a>
       <button type="submit" class="submit-button">Submit</button>
-      <p id="error-message" style="color: red; display: none;">Invalid email or password</p>
     </form>
   </div>
 </div>
 </main>
-  <script src="./js/login.js"></script>
 </body>
 </html>
