@@ -11,13 +11,9 @@ if (!$conn) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo '<pre>';
-    print_r($_POST); 
-    echo '</pre>';
-
     $firstName = $_POST['firstname'];
     $middleName = $_POST['middlename'];
-    $lastName = $_POST['lastname'] ?? '';
+    $lastName = $_POST['lastname'];
     $municipality = $_POST['municipality'];
     $barangay = $_POST['barangay'];
     $zipCode = $_POST['zipcode'];
@@ -25,19 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contactNo = $_POST['number'];
     $email = $_POST['email'];
 
-    if (empty($firstName) || empty($middleName) || empty($lastName) 
-      || empty($municipality) || empty($barangay) || empty($zipCode) 
-      || empty($street) || empty($contactNo) || empty($email)) {
+    if (empty($firstName) || empty($middleName) || empty($lastName) || empty($municipality) || empty($barangay) || empty($zipCode) || empty($street) || empty($contactNo) || empty($email)) {
         die("All fields are required.");
     }
 
-    $sql = "INSERT INTO `customer` (`lastname`, `firstname`, `middlename`, 
-    `street`, `barangay`, `municipality`, `zip_code`, `contact_number`, 
-    `email_address`)VALUES ('$lastName', '$firstName', '$middleName', '$street', 
-    '$barangay', '$municipality', '$zipCode', '$contactNo', '$email')";
+    $sql = "INSERT INTO `customer` (`lastname`, `firstname`, `middlename`, `street`, `barangay`, `municipality`, `zip_code`, `contact_number`, `email_address`)
+            VALUES ('$lastName', '$firstName', '$middleName', '$street', '$barangay', '$municipality', '$zipCode', '$contactNo', '$email')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
+        echo "Customer Information successfully added!";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
