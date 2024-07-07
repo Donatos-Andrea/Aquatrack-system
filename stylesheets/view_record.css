@@ -89,53 +89,86 @@ body, h1, table {
       width: 30px;
       height: 30px;
    }
-
-  main {
+  
+   .form {
+      background-color: #dddddd97;
+    color: #01051a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+    align-items: center;
+  }
+  
+  form h1 {
+    color: #004dd0; 
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  form input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00792a; 
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    background-color: #004dd0; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  form button:hover {
+    background-color: #0020ac;
+  }
+  
+  .index {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 1rem; 
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .contact {
+    background-color: #78a6f6;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: all 0.38s ease;
+  }
+  
+  .about-us {
+    color: #01051a;
+    text-align: center;
     margin: 30px;
   }
   
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  th {
-    background-color: #78a6f6;
-    color: white;
-    text-align: left;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #afbdfd;
-  }
-  
-  tr:hover {
-    background-color: #a5b2ff;
-  }
-  
-  .cell-with-border {
-    border: 1px solid #9ca6dc;
-  }
-
-  .order h1 {
-    text-align: center;
-  }
-  
-  /*footer*/
-.footer {
-    padding: 17px ;
-    background-color: #78a6f6;
-  }
-  
-  .footer .copyright {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 15px;
-    color: #000;
-  }
+    /*footer*/
+    .footer {
+      padding: 17px ;
+      background-color: #78a6f6;
+    }
+    
+    .footer .copyright {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 15px;
+      color: #000;
+    }

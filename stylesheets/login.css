@@ -89,6 +89,13 @@ form button {
 form button:hover {
   background-color: #0020ac;
 }
+
+.contact {
+  background-color: #78a6f6;
+  text-align: center;
+  color: #000;
+}
+
 /*footer*/
 .footer {
   padding: 17px ;
