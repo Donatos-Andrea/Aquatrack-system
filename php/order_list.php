@@ -18,7 +18,7 @@
     </header>
     <nav>
       <ul>
-        <li><a href="login.html">Payment</a></li>
+        <li><a href="login.php">Payment</a></li>
         <li><a href="customers_information.php">View Record</a></li>
         <li><a href="products.php">Products</a></li>
       </ul>
