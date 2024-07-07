@@ -17,7 +17,6 @@ margin: 20px;
 
 header {
   color: #fff;
-  padding: 10px 20px;
   border-bottom: 3px solid #98b5ff;
   padding: 18px;
 }
@@ -69,6 +68,8 @@ header {
 
 .form-container h1 {
   margin-bottom: 20px;
+  text-align: center;
+  color: #001685;
 }
 
 .form {
@@ -96,15 +97,6 @@ button:hover {
   background-color: #0277bd;
 }
 
-.footer {
-  margin-top: auto;
-  padding: 10px 0;
-  width: 100%;
-  background-color: #0288d1;
-  text-align: center;
-  color: white;
-}
-
 input::placeholder {
   color: #0288d1;
 }
@@ -118,7 +110,6 @@ input:focus, select:focus {
   /*footer*/
   .footer {
     padding: 17px ;
-    background-color: #78a6f6;
   }
   
   .footer .copyright {
