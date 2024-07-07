@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const table = document.getElementById('payment-table');
+  const table = document.getElementById('products-table');
   const addBtn = document.getElementById('add-btn');
 
   addBtn.addEventListener('click', function() {
@@ -23,11 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
     newRow.innerHTML = `
       <td><input type="text" disabled></td>
       <td><input type="text" disabled></td>
+      <td><input type="text" disabled></td>
+      <td><input type="text" disabled></td>
+      <td><input type="text" disabled></td>
       <td><input type="date" disabled></td>
       <td>
+        <button class="save-btn" style="display: none;">Save</button>
         <button class="edit-btn">Edit</button>
         <button class="delete-btn">Delete</button>
-        <button class="save-btn" style="display: none;">Save</button>
       </td>
     `;
   }
