@@ -90,45 +90,25 @@ nav ul li a:hover {
     height: 30px;
  }
 
- .form {
-	background-color: #dddddd97;
-  color: #01051a;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 20px auto;
+ .main-button {
+  background-image: url('../images/mianimage.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  
   align-items: center;
-}
+ }
 
-form h1 {
-  color: #004dd0; 
-  margin-bottom: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-form input {
-  width: calc(100% - 22px); 
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #00792a; 
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-form button {
+ .main-button button {
   background-color: #004dd0; 
   color: #fff; 
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 15px;
-  text-align: center;
-}
+  font-size: 16px;
+ }
 
-form button:hover {
+ .main-button button:hover {
   background-color: #0020ac;
 }
 
