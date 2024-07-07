@@ -14,7 +14,6 @@ body {
 header {
   background-color: #78a6f6;
   color: #fff;
- /* padding: 10px 20px;*/
   border-bottom: 3px solid #8790b9;
   padding: 18px;
   text-align: center;
@@ -52,7 +51,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #052c81; 
 }
-/*header*/
+
 .form {
   background-color: #ffffff; 
   padding: 20px;
@@ -96,15 +95,42 @@ form button:hover {
   color: #000;
 }
 
-/*footer*/
-.footer {
-  padding: 17px ;
-  background-color: #78a6f6;
+.index {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  align-items: center;
+  gap: 1rem; 
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.footer .copyright {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 15px;
+.contact {
+  background-color: #78a6f6;
   color: #000;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  transition: all 0.38s ease;
 }
+
+.about-us {
+  color: #01051a;
+  text-align: center;
+  margin: 30px;
+}
+
+.footer {
+    padding: 17px ;
+    background-color: #78a6f6;
+  }
+  
+.footer .copyright {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+  }

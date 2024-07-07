@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Log in</title>
+  <title>AQUATRACK</title>
   <link rel="stylesheet" href="./stylesheets/login.css" />
 </head>
 <body>
@@ -12,12 +12,6 @@
       <h2>Aquatrack</h2>
       <p>Drink Pure, Live Pure</p>
     </div>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="customers_information.html">View Record</a></li>
-      </ul>
-    </nav>
   </header>
 
   <div class="form">
@@ -25,13 +19,33 @@
       <h1>Log In</h1>
       <input type="email" id="email" placeholder="Email" required />
       <input type="password" id="password" placeholder="Password" required />
+      <a href="signup.html">Don't have a account?</a>
       <button type="submit">Submit</button>
+      <p id="error-message" style="color: red; display: none;">Invalid email or password</p>
     </form>
   </div>
 
-  <section class="footer">
-    <p class="copyright">© 2024 by PPG. All rights reserved. </p>
+  <section class="index">
+    <div class="about-us">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Tripple J Mineral Water Station, your trusted source for 
+        pristine and refreshing mineral water. Nestled in the heart of nature,
+        our facility is dedicated to providing you with the purest water, 
+        rich in essential minerals to support your health and well-being. 
+        At Tripple J, we believe that the quality of water you drink is paramount, 
+        and we are committed to ensuring that every drop you consume meets the 
+        highest standards of purity and taste.</p>
+    </div>
+    <div class="contact">  
+    <h2>Contact Us</h2>
+      <p>09123456789</p>
+      <p>B-3 Lot 1 Viscarra St., P-1 New Lower Bicutan, Taguig City</p>
+    </div>
   </section>
+      <section class="footer">
+          <p class="copyright">© 2024 by PPG. All rights reserved. </p>
+      </section> 
 
   <script src="./js/login.js"></script>
 </body>
