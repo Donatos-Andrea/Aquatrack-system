@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const formData = new FormData(form);
 
-        fetch('http://localhost/Aquatrack-system/php/signup.php', { /
+        fetch('http://localhost/Aquatrack-system/php/signup.php', {
             method: 'POST',
             body: formData
         })
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             console.log(data); 
             alert('Registration successful!');
+            window.location.href = 'login.html';
         })
         .catch(error => {
             console.error('Error:', error);
@@ -26,4 +27,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
