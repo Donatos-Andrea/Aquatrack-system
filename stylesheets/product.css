@@ -1,0 +1,151 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dbfbff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #78a6f6;
+    color: #fff;
+   /* padding: 10px 20px;*/
+    border-bottom: 3px solid #8790b9;
+    padding: 18px;
+    text-align: center;
+  }
+  
+  .logo-text h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .logo-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #052c81; 
+  }
+  /*header*/
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #01579b;
+  }
+  
+  form {
+    background-color: #ffffff;
+    border: 1px solid #0288d1;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #01579b;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0288d1;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    background-color: #0288d1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  form button:hover {
+    background-color: #0277bd;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #0288d1;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0288d1;
+    color: #ffffff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e1f5fe;
+  }
+  
+  tr:hover {
+    background-color: #b3e5fc;
+  }
+  
+  td button {
+    background-color: #0288d1;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  td button:hover {
+    background-color: #0277bd;
+  }
+  
+
+  /*footer*/
+.footer {
+    padding: 17px ;
+    background-color: #78a6f6;
+  }
+  
+  .footer .copyright {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+  }
