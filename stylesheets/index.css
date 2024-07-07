@@ -4,9 +4,10 @@ body, h1, table {
 }
 
 body {
-	align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
+  color: #0277bd;
 	flex-direction: column;
-  font-family: Arial, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -90,34 +91,21 @@ nav ul li a:hover {
     height: 30px;
  }
 
- .main-button {
-  background-image: url('../images/mianimage.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  
-  align-items: center;
- }
+ #cover {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 50px;
 
- .main-button button {
-  background-color: #004dd0; 
-  color: #fff; 
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
  }
-
- .main-button button:hover {
-  background-color: #0020ac;
-}
 
 .index {
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   align-items: center;
   gap: 1rem; 
   text-align: center;
@@ -125,19 +113,62 @@ nav ul li a:hover {
 }
 
 .contact {
-  background-color: #78a6f6;
   color: #000;
   text-align: center;
   padding: 10px;
   margin: 10px;
-  border-radius: 15px;
   transition: all 0.38s ease;
 }
 
-.about-us {
-  color: #01051a;
+.container {
   text-align: center;
-  margin: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 70px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #01579b;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #0288d1;
+}
+
+button {
+  background-color: #039be5;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #0277bd;
+  transform: scale(1.1);
+}
+
+.login-button:hover {
+  background-color: #0277bd;
+  transform: scale(1.1);
+}
+
+.signup-button:hover {
+  background-color: #01579b;
+} 
+
+.login-button:active {
+  background-color: #01579b;
 }
 
   /*footer*/
