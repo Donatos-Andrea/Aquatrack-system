@@ -1,24 +1,25 @@
-/* Reset some default styles */
-body, h1, p {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #88c0e0, white);
+  height: 100vh;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e0f7fa;
-  color: #01579b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main {
+align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px;
 }
 
 header {
-  width: 100%;
-  background-color: #0288d1;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  color: #fff;
+  padding: 10px 20px;
+  border-bottom: 3px solid #98b5ff;
+  padding: 18px;
 }
 
 .logo-container {
@@ -28,8 +29,32 @@ header {
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
   margin-right: 10px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 24px;
+  background: -webkit-linear-gradient(#001685, #b5c9f9);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.logo-text h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
 }
 
 .form-container {
