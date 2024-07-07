@@ -18,7 +18,7 @@ main {
   header {
     color: #fff;
     padding: 10px 20px;
-    border-bottom: 3px solid #8790b9;
+    border-bottom: 3px solid #98b5ff;
     padding: 18px;
   }
   
@@ -37,7 +37,7 @@ main {
     margin: 0;
     font-size: 24px;
     background: -webkit-linear-gradient(#001685, #b5c9f9);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
@@ -88,6 +88,10 @@ main {
     text-align: center;
   }
   
+.login h1 {
+  color: #001685;
+}
+
   form {
     display: flex;
     flex-direction: column;
@@ -117,7 +121,7 @@ main {
     margin-top: 10px;
 }
 
-  .submit-button:hover {
+.submit-button:hover {
     background-color: #0277bd;
     transform: scale(1.1);
 }
