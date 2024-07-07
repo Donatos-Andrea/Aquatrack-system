@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./stylesheets/customer_information.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/customer_information.css">
   <title>Customer's Information</title>
 </head>
 <body>
@@ -25,39 +25,33 @@
   </nav>
   <div class="form-container">
     <h1>Customer's Information</h1>
-    <form class="form" id="form">
-
-      <label>Customer's Id</label>
-      <input
-        type="text"
-        id="customer_id"
-        placeholder="Customer's Id"
-        required
-        class="customer_id"/>
-
-      <label>Lastname</label>
-      <input
-        type="text"
-        id="lastName"
-        placeholder="Last Name"
-        required
-        class="last"/>
-        
-      <label>Firstname</label>
+    <form id="form" class="form" method="post" action="./php/customer.php">
+      <label>First Name</label>
       <input
         type="text"
         id="firstName"
+        name="firstname"
         placeholder="First Name"
         required
         class="first"/>
         
-      <label>Middlename</label>
+      <label>Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastname"
+        placeholder="Last Name"
+        required
+        class="last"/>
+        
+      <label>Middle Name</label>
       <input
         type="text"
         id="middleName"
+        name="middlename"
         placeholder="Middle Name"
-        class="middle"
-        required/>
+        required
+        class="middle"/>
 
       <label for="municipality">Municipality:</label>
       <select name="municipality" id="municipality" required>
@@ -74,31 +68,37 @@
         <option value="Central Signal Village">Central Signal Village</option>
       </select>
 
-      <label for="zipCode">Zipcode:</label>
-      <select name="zipCode" id="zipCode" required>
+      <label for="zipcode">Zipcode:</label>
+      <select name="zipcode" id="zipcode" required>
         <option value="">Select the Zipcode</option>
         <option value="1630">1630</option>
         <option value="1632">1632</option>
         <option value="1633">1633</option>
       </select>
 
+      <label>Street</label>
       <input
         type="text"
         id="street"
+        name="street"
         placeholder="Street"
         required
         class="street"/>
 
+      <label>Contact No.</label>
       <input
         type="text"
         id="number"
+        name="number"
         placeholder="Contact No."
         required
         class="number"/>
 
+      <label>Email</label>
       <input
         type="email"
         id="email"
+        name="email"
         placeholder="Email"
         required
         class="email"/>

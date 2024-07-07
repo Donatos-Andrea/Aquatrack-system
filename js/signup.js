@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const formData = new FormData(form);
 
-        fetch('http://localhost/Aquatrack-system/php/signup.php', { // Replace with actual path
+        fetch('http://localhost/Aquatrack-system/php/signup.php', {
             method: 'POST',
             body: formData
         })
@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.text(); // Assuming the server returns text
+            return response.text(); 
         })
         .then(data => {
             console.log(data); 
             alert('Registration successful!');
-            // Optionally redirect to another page or perform additional actions
+            window.location.href = 'login.html';
         })
         .catch(error => {
             console.error('Error:', error);
