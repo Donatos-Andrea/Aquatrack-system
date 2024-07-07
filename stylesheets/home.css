@@ -93,9 +93,19 @@ margin: 20px;
    }
 
    main {
-    padding: 100px;
-    margin: 120px;
+    padding: 20px;
+    margin: 20px;
    }
+
+.tripplej-img {
+  width: 600px;
+  height: 400px;
+}
+
+.tripplej h1 {
+  text-align: center;
+  color: #001685;
+}
 
   /*footer*/
   .footer {
