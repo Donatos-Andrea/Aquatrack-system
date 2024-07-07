@@ -5,14 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AQUATRACK</title>
   <link rel="stylesheet" href="./stylesheets/login.css" />
-  <script>
-    window.onload = function() {
-      const params = new URLSearchParams(window.location.search);
-      if (params.has('error') && params.get('error') === 'invalid') {
-        alert('Invalid email or password. Please try again.');
-      }
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -25,6 +17,29 @@
   </div>
   </header>
 
+<main>
+  <div class="container">
+    <div class="aqua-section">
+        <h1>Welcome to Aquatrack!</h1>
+        <p>Join the AquaTrack community and take control of your business.
+           Sign up now and start enjoying the benefits of a streamlined, 
+           efficient, and reliable water management system.</p>
+    </div>
+  <div class="login">
+    <form>
+      <h1>Log In</h1>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <a class="signup-link" href="signup.html">Don't have a account?</a>
+      <button type="submit" class="submit-button">Submit</button>
+      <p id="error-message" style="color: red; display: none;">Invalid email or password</p>
     </form>
   </div>
 </div>
+
+
+</main>
+
+  <script src="./js/login.js"></script>
+</body>
+</html>
