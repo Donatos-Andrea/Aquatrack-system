@@ -21,16 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function addRow() {
       const newRow = table.insertRow();
       newRow.innerHTML = `
-        <td contenteditable="true">ORXXX</td>
-        <td contenteditable="true">CXXX</td>
-        <td contenteditable="true">PXXX</td>
-        <td contenteditable="true">0</td>
-        <td contenteditable="true">0</td>
-        <td contenteditable="true">0</td>
-        <td contenteditable="true">yyyy-mm-dd</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="date"></td>
         <td>
           <button class="edit-btn">Edit</button>
           <button class="delete-btn">Delete</button>
+          <button class="save-btn">Save</button>
         </td>
       `;
     }
@@ -43,9 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
         cells[i].setAttribute('contenteditable', 'true');
       }
   
-      btn.textContent = 'Save';
-      btn.classList.remove('edit-btn');
-      btn.classList.add('save-btn');
+      btn.style.display = 'none'; 
+      row.querySelector('.save-btn').style.display = 'inline-block';
     }
   
     function handleSave(btn) {
@@ -56,9 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
         cells[i].setAttribute('contenteditable', 'false');
       }
   
-      btn.textContent = 'Edit';
-      btn.classList.remove('save-btn');
-      btn.classList.add('edit-btn');
+      btn.style.display = 'none';
+      row.querySelector('.edit-btn').style.display = 'inline-block'; 
     }
   
     function handleDelete(btn) {
