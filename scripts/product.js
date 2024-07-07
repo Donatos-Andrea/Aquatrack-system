@@ -5,7 +5,7 @@ const inputSubcat = document.querySelector('#subcategory');
 const inputSize = document.querySelector('#size');
 const inputPrice = document.querySelector('#price');
 
-const endpoint = 'https://iraya.site/api/kpop.php';
+const endpoint = '';
 
 async function getProduct() {
     const response = await fetch(endpoint);
@@ -21,7 +21,7 @@ async function getProduct() {
         row.innerHTML = `
             <td>${item.id}</td>
             <td>${item.category}</td>
-            <td>${item.subcat}</td>
+            <td>${item.subcategory}</td>
             <td>${item.size}</td>
             <td>${item.price}</td>`;
 
