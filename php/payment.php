@@ -1,10 +1,35 @@
+<?php
+$username = "root";
+$password = "";
+$database = "db_aquatrack";
+$mysqli = new mysqli("localhost", $username, $password, $database);
+
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+
+$query = "SELECT * FROM payment";
+$rows = [];
+
+if ($result = $mysqli->query($query)) {
+    while ($row = $result->fetch_assoc()) {
+        $rows[] = $row;
+    }
+    $result->free();
+} else {
+    echo "Error: " . $mysqli->error;
+}
+
+$mysqli->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Payment</title>
-  <link rel="stylesheet" href="./stylesheets/payment.css" />
+  <link rel="stylesheet" href="../stylesheets/payment.css" />
 </head>
 <body>
   <header>
@@ -32,16 +57,23 @@
         <thead>
           <tr>
             <th>Payment Id</th>
-            <th>Order Id</th>
             <th>Date of Payment</th>
             <th>Action</th>
           </tr>
         </thead>
-        
         <tbody>
-          <!-- Table rows will be dynamically added via JavaScript -->
+          <?php
+          if (!empty($rows)) {
+              foreach ($rows as $row) {
+                  echo "<tr>";
+                  echo "<td>" . $row['payment_id'] . "</td>";
+                  echo "<td>" . $row['date_of_payment'] . "</td>";
+                  echo "<td><button>Edit</button></td>";
+                  echo "</tr>";
+              }
+          }
+          ?>
         </tbody>
-        
       </table>
       <button id="add-btn">Add Row</button>
     </div>
