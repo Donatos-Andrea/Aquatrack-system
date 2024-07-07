@@ -25,44 +25,42 @@
     </nav>  
 
     <form>
-     <h1>Product</h1>
+    <h1>Product</h1>
       <label>Product ID</label>
-      <input id="product_id" type="text" placeholder="" disabled />
+      <input id="id" type="text" placeholder="ID" disabled />
 
-      <label for="">Product Name</label>
-      <select name="customers" id="customers" required>
-        <option> </option>
-        <option value="product-name">HAHAHAHAHA</option>
-      </select>
-
-      <label for="category">Category</label>
+      <label>Product Name</label>
       <select name="category" id="category" required>
-        <option> </option>
-        <option value="category">HAHAHAHAHA</option>
+        <option>Select</option>
+        <option value="category">Gallon</option>
+        <option value="category">Water</option>
+      </select> 
+
+      <label>Sub-category</label>
+      <select>
+        <option>Select</option>
+        <option value="sub-category" id="subcategory">Slim Gallon</option>
+        <option value="sub-category" id="subcategory">Round Gallon</option>
+        <option value="sub-category" id="subcategory">Mineral</option>
+        <option value="sub-category" id="subcategory">Alkaline</option>
+        <option value="sub-category" id="subcategory">Purified</option>
       </select>
 
-      <label for="sub-category">Sub-category</label>
-      <select name="sub-category" id="sub-category" required>
-        <option> </option>
-        <option value="sub-category">HAHAHAHAHA</option>
-      </select>
+      <label>Size</label>
+      <input id="size" type="text" placeholder="Size" />
 
-      <label for="size">Size</label>
-      <input id="size" type="text" placeholder="size" />
+      <label>Price</label>
+      <input id="price" type="text" placeholder="Price" />
 
-      <label for="price">Price</label>
-      <input id="price" type="text" placeholder="price" />
-
-      <button type="button" onclick="insertKpop()">Insert</button>
-      <button type="button" onclick="updateKpop()">Update</button>
+      <button type="button" onclick="insertProduct()">Insert</button>
+      <button type="button" onclick="updateProduct()">Update</button>
     </form>
     <table>
       <thead>
         <tr>
-          <th>Product ID</th>
+          <th>ID</th>
           <th>Product Name</th>
-          <th>Category</th>
-          <th>Sub-Category</th>
+          <th>Sub-category</th>
           <th>Size</th>
           <th>Price</th>
           <th>Edit</th>
@@ -75,5 +73,5 @@
       <p class="copyright">© 2024 by PPG. All rights reserved. </p>
   </section>
   </body>
-    <script src="../crud"></script>
+    <script src="./scripts/product.js"></script>
 </html>
