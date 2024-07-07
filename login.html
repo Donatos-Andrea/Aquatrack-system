@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AQUATRACK</title>
   <link rel="stylesheet" href="./stylesheets/login.css" />
+  <script>
+    window.onload = function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('error') && params.get('error') === 'invalid') {
+        alert('Invalid email or password. Please try again.');
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -15,13 +23,12 @@
   </header>
 
   <div class="form">
-    <form id="login-form">
+    <form id="login-form" action="./php/log_in.php" method="post">
       <h1>Log In</h1>
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Password" required />
-      <a href="signup.html">Don't have a account?</a>
+      <input type="email" id="email" name="email" placeholder="Email" required />
+      <input type="password" id="password" name="password" placeholder="Password" required />
+      <a href="signup.html">Don't have an account?</a>
       <button type="submit">Submit</button>
-      <p id="error-message" style="color: red; display: none;">Invalid email or password</p>
     </form>
   </div>
 
@@ -43,10 +50,8 @@
       <p>B-3 Lot 1 Viscarra St., P-1 New Lower Bicutan, Taguig City</p>
     </div>
   </section>
-      <section class="footer">
-          <p class="copyright">© 2024 by PPG. All rights reserved. </p>
-      </section> 
-
-  <script src="./js/login.js"></script>
+  <section class="footer">
+      <p class="copyright">© 2024 by PPG. All rights reserved. </p>
+  </section> 
 </body>
 </html>
