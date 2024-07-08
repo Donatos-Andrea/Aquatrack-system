@@ -33,7 +33,7 @@ $mysqli->close();
 <body>
   <header>
     <div class="logo-container">
-      <img src="./images/logo.png" class="logo">
+      <img src="../Aquatrack-system/images/logo.png" class="logo">
       <div class="logo-text">
         <h1>Aquatrack</h1>
         <p>Drink Pure, Live Pure</p> 
