@@ -27,6 +27,16 @@
     <h1>Customer's Information</h1>
     <form id="form" class="form" method="post" 
       action="../Aquatrack-system/php/customer.php">
+      
+      <label>Customer's Id</label>
+      <input
+        type="text"
+        id="customerId"
+        name="customerid"
+        placeholder="Customer's Id"
+        required
+        class="customerId"/>
+      
       <label>First Name</label>
       <input
         type="text"
@@ -35,15 +45,6 @@
         placeholder="First Name"
         required
         class="first"/>
-        
-      <label>Last Name</label>
-      <input
-        type="text"
-        id="lastName"
-        name="lastname"
-        placeholder="Last Name"
-        required
-        class="last"/>
         
       <label>Middle Name</label>
       <input
@@ -54,11 +55,23 @@
         required
         class="middle"/>
 
-      <label for="municipality">Municipality:</label>
-      <select name="municipality" id="municipality" required>
-        <option value="">Select the Municipality</option>
-        <option value="Taguig City">Taguig City</option>
-      </select>
+      <label>Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastname"
+        placeholder="Last Name"
+        required
+        class="last"/>
+
+      <label>Street</label>
+      <input
+        type="text"
+        id="street"
+        name="street"
+        placeholder="Street"
+        required
+        class="street"/>
 
       <label for="barangay">Barangay:</label>
       <select name="barangay" id="barangay" required>
@@ -69,6 +82,12 @@
         <option value="Central Signal Village">Central Signal Village</option>
       </select>
 
+      <label for="municipality">Municipality:</label>
+      <select name="municipality" id="municipality" required>
+        <option value="">Select the Municipality</option>
+        <option value="Taguig City">Taguig City</option>
+      </select>
+
       <label for="zipcode">Zipcode:</label>
       <select name="zipcode" id="zipcode" required>
         <option value="">Select the Zipcode</option>
@@ -76,15 +95,6 @@
         <option value="1632">1632</option>
         <option value="1633">1633</option>
       </select>
-
-      <label>Street</label>
-      <input
-        type="text"
-        id="street"
-        name="street"
-        placeholder="Street"
-        required
-        class="street"/>
 
       <label>Contact No.</label>
       <input
